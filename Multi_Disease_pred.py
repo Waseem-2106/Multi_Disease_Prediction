@@ -337,7 +337,7 @@ if (selected == "Hypo-Thyroid Prediction"):
         on_thyroxine = st.selectbox('On Thyroxine',['Yes','No'])
 
     with col1:
-        tsh = st.text_input('TSH')
+        tsh = st.number_input('TSH')
 
     with col2:
         t3_measured = st.selectbox('T3 Measured',['Yes','No'])
