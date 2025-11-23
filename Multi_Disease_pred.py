@@ -328,25 +328,25 @@ if (selected == "Hypo-Thyroid Prediction"):
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        age = st.text_input('Age')
+        age = st.number_input('Age')
 
     with col2:
-        sex = st.text_input('Sex')
+        sex = st.selectbox('Sex',["Male","Female"])
 
     with col3:
-        on_thyroxine = st.text_input('On Thyroxine')
+        on_thyroxine = st.selectbox('On Thyroxine',['Yes','No'])
 
     with col1:
         tsh = st.text_input('TSH')
 
     with col2:
-        t3_measured = st.text_input('T3 Measured')
+        t3_measured = st.selectbox('T3 Measured',['Yes','No'])
 
     with col3:
-        t3 = st.text_input('T3')
+        t3 = st.number_input('T3')
 
     with col1:
-        tt4 = st.text_input('TT4')
+        tt4 = st.number_input('TT4')
 
     # code for Prediction
     thyroid_diagnosis = ''
